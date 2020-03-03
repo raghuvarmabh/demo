@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+  build:
+    commands:
+      - echo hello raghu
+      - java -version
+      - mvn clean package
+      - echo build complete
+artifacts:
+  files:
+    - target/demo-0.0.1-SNAPSHOT.jar
